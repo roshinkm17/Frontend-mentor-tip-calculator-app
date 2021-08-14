@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+    <style>
+      .attribution {
+        position: absolute;
+        bottom: 10px;
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header id="app-title-hdr">
+      <h1 id="app-title">SPLI <br />TTER</h1>
+    </header>
+    <div id="box">
+      <div id="input-section">
+        <div class="input">
+          <label for="amount">Bill</label>
+          <p class="error-text" id="bill-amount-error">Error</p>
+          <div class="icon-inside">
+            <i class="icon fa fa-dollar"></i>
+            <input class="" type="text" name="amount" id="bill-amount" />
+          </div>
+        </div>
+        <div class="input">
+          <label for="tip-percent">Select Tip %</label>
+          <div id="btn-grp">
+            <button class="btn">5%</button>
+            <button class="btn">10%</button>
+            <button class="btn">15%</button>
+            <button class="btn">25%</button>
+            <button class="btn">50%</button>
+            <input
+              type="text"
+              name="tip-percent"
+              placeholder="CUSTOM"
+              id="tip-percent"
+            />
+          </div>
+        </div>
+        <div class="input">
+          <label for="num-people">Number of People</label>
+          <p class="error-text" id="num-people-error">Error</p>
+          <div class="icon-inside">
+            <i class="icon fa fa-user"></i>
+            <input type="text" name="num-people" id="num-people" />
+          </div>
+        </div>
+      </div>
+      <div id="preview-section">
+        <div>
+          <div class="row">
+            <p class="row-title">Tip Amount <br /><span>/ person</span></p>
+            <h1 class="row-amount tip-per-person">$ 0.00</h1>
+          </div>
+          <div class="row">
+            <p class="row-title">Total <br /><span>/ person</span></p>
+            <h1 class="row-amount total-per-person">$ 0.00</h1>
+          </div>
+        </div>
+        <button id="reset-btn">RESET</button>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Roshin</a>.
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
